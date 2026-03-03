@@ -331,7 +331,7 @@
         "wheel": [
             {
                 "module": "hvac",
-                "input_file": "wheels/shared/hvac-0.10.1-py2.py3-none-any.whl"
+                "input_file": "wheels/shared/hvac-2.4.0-py3-none-any.whl"
             }
         ]
     }
