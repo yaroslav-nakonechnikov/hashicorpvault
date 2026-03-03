@@ -40,25 +40,24 @@
             "required": true,
             "order": 2
         },
-        "vault_token": {
-            "description": "Token used to authenticate requests to Hashicorp Vault when using token authentication",
+        "vault_role_id": {
+            "description": "Role ID for AppRole authentication (preferred over token when both are provided)",
             "data_type": "password",
-            "required": true,
             "order": 3
         },
-        "vault_namespace": {
-            "description": "Vault Namespace",
-            "data_type": "string",
+        "vault_secret_id": {
+            "description": "Secret ID for AppRole authentication (required when Role ID is set)",
+            "data_type": "password",
             "order": 4
         },
-        "vault_role_id": {
-            "description": "Role ID if using AppRole authentication",
+        "vault_token": {
+            "description": "Token for token-based authentication (used only when AppRole credentials are not provided)",
             "data_type": "password",
             "order": 5
         },
-        "vault_secret_id": {
-            "description": "Secret ID if using AppRole authentication",
-            "data_type": "password",
+        "vault_namespace": {
+            "description": "Vault Namespace (optional; required only for HCP Vault or specific enterprise setups)",
+            "data_type": "string",
             "order": 6
         }
     },

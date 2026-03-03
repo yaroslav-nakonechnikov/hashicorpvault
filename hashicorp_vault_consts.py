@@ -24,3 +24,14 @@ HASHICORP_VAULT_STATE_FILE_CORRUPT_ERR = "Error occurred while loading the state
 
 # Error message handling constants
 ERR_MSG_UNAVAILABLE = "Error message unavailable. Please check the asset configuration and|or action parameters"
+
+# Authentication method messages
+HASHICORP_VAULT_USING_APPROLE_AUTH = "AppRole credentials provided. Using AppRole authentication (preferred over token)"
+HASHICORP_VAULT_USING_TOKEN_AUTH = "Token provided. Using token authentication"
+HASHICORP_VAULT_NO_AUTH_CREDENTIALS_ERR = (
+    "No valid authentication credentials found. "
+    "Please provide either AppRole credentials (Role ID + Secret ID) or a Vault token in the asset configuration."
+)
+HASHICORP_VAULT_INCOMPLETE_APPROLE_ERR = (
+    "Incomplete AppRole credentials: both 'vault_role_id' and 'vault_secret_id' must be provided together."
+)
