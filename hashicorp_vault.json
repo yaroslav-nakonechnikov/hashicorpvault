@@ -327,7 +327,7 @@
             "versions": "EQ(*)"
         }
     ],
-    "pip39_dependencies": {
+    "pip313_dependencies": {
         "wheel": [
             {
                 "module": "hvac",
